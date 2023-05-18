@@ -1,0 +1,16 @@
+@import 'variables';
+
+.img-name{
+    min-height: 100vh;
+    @include flex-all-center;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bold;
+    background-image: url('../images/wp5377577-rufus-du-sol-wallpapers.jpeg');
+    @include backgr-parallax;
+    background-attachment: fixed;
+    color: #fff;
+}
+.img-name-span:hover{
+    transform: skew(-1deg)
+}

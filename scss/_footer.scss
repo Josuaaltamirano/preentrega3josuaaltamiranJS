@@ -1,0 +1,36 @@
+@import 'variables';
+
+.footer{
+    padding: 1em;
+    font-size: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    background-color: $backblack;
+    color: #fff;
+}
+.socials-footer{
+    @include flex-all-center;
+    margin: 0;
+    padding: 0;
+}
+.social{
+    width: 2em;
+    padding: 0.5em;
+    filter:grayscale(100);
+}
+li{
+    list-style: none;
+}
+.copy{
+    text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    footer{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+}

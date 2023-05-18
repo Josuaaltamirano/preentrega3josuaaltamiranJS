@@ -1,0 +1,22 @@
+$backblack: #000;
+$shadowall: 5px 10px 10px rgba(82, 82, 82, 0.489);
+
+@mixin flex-all-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin backgr-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* El extend se ecuentra en el archivo shop.scss */
+
+$colors: (
+    white: #fff,
+    background: #000,
+    btnhover:#1e0000,
+)
+

@@ -1,0 +1,58 @@
+@import 'variables';
+
+.title-page-contact{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+}
+.contact-container{
+    @include flex-all-center;
+    flex-direction: column;
+    min-height: 100vh;
+    color:black;
+    @include backgr-parallax;
+    padding: 1em;
+    background-color: black;
+}
+.data-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 25em;
+}
+.data-form label, .data-form input, .data-form textarea{
+    margin: 0.25em;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: bold;
+}
+.data-form input, .data-form textarea{
+    border: 0px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100%;
+    padding: 0.25em;
+    box-shadow: $shadowall;
+}
+.btn-enviar{
+    height: 2.5em;
+    padding: 2.5em;
+    color: rgb(18, 0, 0);
+    background-color: $backblack;
+}
+.hr-contact{
+    color: #fff;
+    border: solid 0.5px;
+    width: 90%;
+    margin: 0.5em 0 0.5em; 
+}
+.btn-enviar:active {
+    background-color: $backblack;
+    box-shadow: 2.5px 5px 5px rgba(82, 82, 82, 0.489);
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 750px) {
+    .data-form{
+        width: 100%;
+    }
+}
